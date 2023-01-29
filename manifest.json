@@ -6,7 +6,7 @@
   "description": "Makes wikipedia look like it used to.",
 
   "icons": {
-    "48": "wiki.ico"
+    "48": "wiki.png"
   },
 
   "content_scripts": [
