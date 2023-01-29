@@ -1,4 +1,7 @@
-var url = window.location;
-if (!(url.href.includes("?useskin=vector"))) {
-    url.href += "?useskin=vector";
+if (!(url.href.includes("useskin=vector"))) {
+    if (!(url.href.includes("?"){
+        url.href += "?useskin=vector";
+    } else {
+        url.href += "&useskin=vector"
+    }
 }
