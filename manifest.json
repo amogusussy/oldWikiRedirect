@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Old Wiki Redirect",
+  "version": "1.0",
+
+  "description": "Makes wikipedia look like it used to.",
+
+  "icons": {
+    "48": "wiki.ico"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wikipedia.org/*",
+        "*://wiki.archlinux.org/*",
+        "*://wikiless.org/*",
+        "*://wikiless.sethforprivacy.com/*",
+        "*://wiki.604kph.xyz/*",
+        "*://wikiless.lunar.icu/*",
+        "*://wiki.froth.zone/*",
+        "*://wikiless.northboot.xyz/*",
+        "*://wikiless.tiekoetter.com/*",
+        "*://wikiless.esmailelbob.xyz/*",
+        "*://wiki.slipfox.xyz/*",
+        "*://wikiless.funami.tech/*",
+        "*://wl.vern.cc/*",
+        "*://wiki.privacytools.io/*",
+        "*://wikiless.rawbit.ninja/*",
+        "*://wiki.adminforge.d/*"
+    ],
+      "js": ["main.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
